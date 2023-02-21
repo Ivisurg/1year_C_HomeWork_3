@@ -27,7 +27,7 @@ if (number > 9999 && number < 100000)
         int numBack = numberForCut % 10;
         if (numFront == numBack)
         {
-            System.Console.WriteLine($"{i}-ое число {numFront} совпадает с {6 - i}-ым числом {numBack}");
+            System.Console.WriteLine($"{i}-ая цифра {numFront} совпадает с {6 - i}-ой цифрой {numBack}");
             flag = 0;                                              //флаг показывает отсутсвие ошибки
             numberForCut = (numberForCut % grade) / 10;          //откинули первую и последнюю цифры   
             grade = grade / 100;                               //уменьшили на 2 порядка (степени) делителя для поиска первой цифры урезанного числа
